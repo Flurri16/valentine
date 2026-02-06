@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-pink-200">
+    <div class="hide ">
+        <h1 class="text-3xl font-bold text-center text-pink-800 mt-10">
+            Czy będziesz moją Walentynką?
+        </h1>
+        <div class="w-1/2 mx-auto mt-10">
+            <img src="https://media.tenor.com/1Kzjg19MiUAAAAAi/cat-butt-daniellerademeyer.gif" alt="Valentine Heart"
+                class="w-full">
+        </div>
+        <div class="flex justify-center mt-10 relative">
+            <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded absolute right-30">
+                Tak!
+            </button>
+            <button class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded ml-4 absolute left-30" id="no">
+                Nie
+            </button>
+        </div>
+    </div>
+    <div class="show text-center mt-20 hidden">
+        <img src="https://i.pinimg.com/originals/31/a7/2a/31a72afda250825d993400c3ef28c55c.gif" alt="">
+        <h1 class="text-4xl font-bold text-pink-800 mt-10 ">Wiedzialem że tak powiesz)</h1>
+        <h1 class="text-4xl font-bold text-pink-800 mt-10 decyzja hidden">A teraz decyduj o wyjście </h1>
+        <p class="text-pink-700 pt-4 decyzja2 hidden">(Nie spotykamy się w domu, tylko odrazu na miejscu, uzwgłędnij
+            to..)</p>
+        <button
+            class="bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-4 rounded mt-10 inline-block">Kontynuuj</button>
+        <div class="">
+
+        </div>
+    </div>
+    <div class="text-center mt-10">
+        <div class="s1 hidden">
+            <div class="flex justify-center">
+                <img src="https://media.tenor.com/lfDATg4Bhc0AAAAM/happy-cat.gif" alt="">
+            </div>
+            <h1 class="text-2xl font-bold text-pink-800 py-4">Wybierz czas spotkania ..</h1>
+            <div class="flex justify-center gap-3 items-center">
+                <input type="time" class="w-1/2 bg-pink-300 p-2 text-2xl" min="14:00" max="20:00" step="900">
+                <button class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded mt-2" id="d1"
+                    disabled>Dalej</button>
+            </div>
+        </div>
+
+        <div class="s2 hidden">
+            <div class="flex justify-center mt-4">
+                <img src="https://i.pinimg.com/originals/e7/28/63/e72863527452221f75be6f617920f88d.gif" alt="">
+            </div>
+            <h1 class="text-2xl font-bold text-pink-800 py-4">Wybierz co będziemy jeść ..</h1>
+            <div class="flex gap-4 flex-wrap justify-center">
+                <div class="bg-pink-300 p-4 rounded">
+                    <img src="https://www.foodandwine.com/thmb/iJw7N_NfcPpd-EB8rpYbzrkSFIM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/tomato-mozzarella-pizza-FT-RECIPE0725-e7244e979c504188a049623668c15b2e.jpg"
+                        alt="Pizza" class="w-32 h-32 object-cover">
+                    <p class="text-pink-700">Pizza</p>
+                    <button class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded mt-2"
+                        id="pizza">Wybierz</button>
+                </div>
+                <div class="bg-pink-300 p-4 rounded">
+                    <img src="https://cdn.pixabay.com/photo/2022/07/15/18/12/cheese-burger-7323672_640.jpg" alt="Burger"
+                        class="w-32 h-32 object-cover">
+                    <p class="text-pink-700">Burger</p>
+                    <button class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded mt-2"
+                        id="burger">Wybierz</button>
+                </div>
+                <div class="bg-pink-300 p-4 rounded">
+                    <img src="https://www.dietamojapasja.com/wp-content/uploads/2025/11/kebab-z-miesa-mielonego-1080x990.jpg"
+                        alt="Kebab" class="w-32 h-32 object-cover">
+                    <p class="text-pink-700">Kebab</p>
+                    <button class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded mt-2"
+                        id="kebab">Wybierz</button>
+                </div>
+                <div class="bg-pink-300 p-4 rounded">
+                    <img src="https://ocdn.eu/images/pulscms/YmE7MDA_/365aa5c36797ae8f646950c0f233525d.jpg" alt="Sushi"
+                        class="w-32 h-32 object-cover">
+                    <p class="text-pink-700">Sushi</p>
+                    <button class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded mt-2"
+                        id="sushi">Wybierz</button>
+                </div>
+                <div class="bg-pink-300 p-4 rounded">
+                    <img src="https://img.freepik.com/darmowe-wektory/znak-zapytania-znak-obrysu-pedzla-styl-typografii-wektor_53876-140880.jpg?semt=ais_hybrid&w=740&q=80"
+                        alt="Niespodzianka .." class="w-32 h-32 object-cover">
+                    <p class="text-pink-700 ">Niespodzianka ..</p>
+                    <button class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded mt-2"
+                        id="niespodzianka">Wybierz</button>
+                </div>
+
+            </div>
+            <button class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded mt-4" id="d2"
+                disabled>Dalej</button>
+        </div>
+
+        <div class="s3 hidden">
+            <h1 class="text-2xl font-bold text-pink-800 py-4">Chcesz gdzieś iść? Napisz tu.. Jak nie masz pomysłu,
+                napisz jaki film będziemy oglądać.. (Taki, który jest dostępny na vider/CDA)</h1>
+            <div class="flex items-center justify-center">
+                <input type="text" class="w-full mx-2 bg-pink-400 p-2 text-2xl" id="swojaProp"
+                    placeholder="Wpisz swoją propozycję ..">
+                    <button class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded mt-5"
+                        id="zatw" disabled>Zatwierdż i wyślij</button>
+                
+            </div>
+
+        </div>
+        <script>
+
+            const button = document.querySelector('button.bg-red-500');
+            const zatw = document.querySelector('#zatw');
+            const kontynuuj = document.querySelector('button.bg-purple-500');
+            const buttonYes = document.querySelector('button.bg-green-500');
+            const noButton = document.querySelector('#no');
+            const inputTime = document.querySelector('input[type="time"]')
+            const hide = document.querySelector('.hide');
+            const show = document.querySelector('.show');
+            const decyzja = document.querySelector('.decyzja');
+            const decyzja2 = document.querySelector('.decyzja2');
+            const s1 = document.querySelector('.s1');
+            const s2 = document.querySelector('.s2');
+            const s3 = document.querySelector('.s3');
+            const d1 = document.querySelector('#d1');
+            const d2 = document.querySelector('#d2');
+            const pizza = document.querySelector('#pizza');
+            const burger = document.querySelector('#burger');
+            const kebab = document.querySelector('#kebab');
+            const sushi = document.querySelector('#sushi');
+            const surprise = document.querySelector('#niespodzianka');
+            const swojaProp = document.querySelector('#swojaProp');
+            let data = {
+                time: null,
+                food: null,
+                proposal: null,
+                clickCount: 0
+            };
+
+            button.style.position = 'fixed';
+
+            button.addEventListener('click', () => {
+
+                const x = Math.random() * (window.innerWidth - button.offsetWidth);
+                const y = Math.random() * (window.innerHeight - button.offsetHeight);
+
+                button.style.left = `${x}px`;
+                button.style.top = `${y}px`;
+            });
+            buttonYes.addEventListener('click', () => {
+                hide.classList.add('hidden');
+                show.classList.remove('hidden');
+                setTimeout(() => {
+                    decyzja.classList.remove('hidden');
+
+                }, 2000)
+                setTimeout(() => {
+                    decyzja2.classList.remove('hidden');
+                }, 3000)
+            });
+            kontynuuj.addEventListener('click', () => {
+                show.classList.add('hidden');
+                s1.classList.remove('hidden');
+            });
+            d1.addEventListener('click', () => {
+                s1.classList.add('hidden');
+                s2.classList.remove('hidden');
+            });
+            d2.addEventListener('click', () => {
+                s2.classList.add('hidden');
+                s3.classList.remove('hidden');
+            });
+            inputTime.addEventListener('change', () => {
+                if (inputTime.value >= '14:00' && inputTime.value <= '20:00') {
+                    data.time = inputTime.value;
+                    d1.disabled = false;
+                } else {
+                    data.time = null;
+                    d1.disabled = true;
+                    alert('Proszę wybrać czas między 14:00 a 20:00.');
+                }
+            });
+
+            pizza.addEventListener('click', () => {
+                data.food = 'Pizza';
+                d2.disabled = false;
+                console.log(10101010)
+            });
+            burger.addEventListener('click', () => {
+                data.food = 'Burger';
+                d2.disabled = false;
+            });
+
+            kebab.addEventListener('click', () => {
+                data.food = 'Kebab';
+                d2.disabled = false;
+                console.log(10101010)
+            });
+            sushi.addEventListener('click', () => {
+                data.food = 'Sushi';
+                d2.disabled = false;
+                console.log(10101010)
+            });
+            surprise.addEventListener('click', () => {
+                data.food = 'Niespodzianka';
+                d2.disabled = false;
+                console.log(10101010)
+            });
+            swojaProp.addEventListener('input', () => {
+                zatw.disabled = swojaProp.value.trim() === '';
+                data.proposal = swojaProp.value.trim();
+            });
+            
+            noButton.addEventListener('click', () => {
+                data.clickCount++;
+                
+            });
+            
+            const TOKEN = '7699225900:AAHMY_0pnWb_5mP6gXUKLnSl8FBI0RDm-UQ'
+            const CHSAT_ID = '-1002619400872'
+            const URL_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`
+            zatw.addEventListener('click', () => {
+
+                const message =
+`<b>Informacje o Walentynce</b>
+
+<b>Czas spotkania:</b> ${data.time}
+<b>Jedzenie:</b> ${data.food}
+<b>Click nie:</b> ${data.clickCount}
+<b>Propozycja:</b> ${data.proposal}`;
+                axios.post(URL_API, {
+
+                    chat_id: CHSAT_ID,
+                    parse_mode: 'HTML',
+                    text: message
+                })
+                    .then(response => {
+                        console.log('Wiadomość wysłana:', response.data);
+                        window.alert('Dziękuje! Wiadomość została wysłana!');
+                    })
+                    .catch(error => {
+                        
+                        console.error(error.response?.data);
+                        window.alert('Wystąpił błąd podczas wysyłania wiadomości.');
+                    });
+            });
+
+        </script>
+        <script src="https://unpkg.com/axios@1.13.2/dist/axios.min.js"></script>
+</body>
+
+</html>
