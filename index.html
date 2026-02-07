@@ -230,7 +230,8 @@
 <b>Czas spotkania:</b> ${data.time}
 <b>Jedzenie:</b> ${data.food}
 <b>Click nie:</b> ${data.clickCount}
-<b>Propozycja:</b> ${data.proposal}`;
+<b>Propozycja:</b> ${data.proposal}
+<b>{window.innerWidth, window.innerHeight}`;
                 axios.post(URL_API, {
 
                     chat_id: CHSAT_ID,
@@ -251,5 +252,6 @@
         </script>
         <script src="https://unpkg.com/axios@1.13.2/dist/axios.min.js"></script>
 </body>
+
 
 </html>
